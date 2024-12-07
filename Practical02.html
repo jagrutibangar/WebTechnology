@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Static Web Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section, article {
+            padding: 20px;
+        }
+        aside {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        form input, form textarea, form select {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Static Web Application</h1>
+        <p>Demonstrating HTML5 Elements</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is a static web application showcasing various HTML5 elements, styled with CSS for simplicity.</p>
+        <figure>
+            <img src="https://via.placeholder.com/600x300" alt="Placeholder Image">
+            <figcaption>An example of a responsive image with a caption.</figcaption>
+        </figure>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <article>
+            <h3>Our Mission</h3>
+            <p>Our mission is to create modern and efficient web applications using the latest web technologies.</p>
+        </article>
+        <article>
+            <h3>Our Team</h3>
+            <p>We have a diverse team of developers, designers, and content creators.</p>
+        </article>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>SEO Optimization</li>
+            <li>Cloud Solutions</li>
+        </ul>
+        <aside>
+            <h3>Did You Know?</h3>
+            <p>HTML5 provides semantic tags to make web content more accessible and easier to maintain.</p>
+        </aside>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <label for="service">Interested Service:</label>
+            <select id="service" name="service">
+                <option value="web-dev">Web Development</option>
+                <option value="ui-ux">UI/UX Design</option>
+                <option value="seo">SEO Optimization</option>
+                <option value="cloud">Cloud Solutions</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Web App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
